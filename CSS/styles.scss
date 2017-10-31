@@ -1,3 +1,29 @@
-body{
-  background-color: orange;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+$primary-color: #ffffff;
+$logo-font:'Josefin Slab', serif;
+
+h1 {
+  font-size: 3em;
+  margin-top: 5px;
+  font-family: $logo-font;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  background-color: $primary-color;
+}
+
+#header-tekst{
+  display: flex;
+  justify-content: center;
+}
+
+.menu{
+  ul{
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+  }
 }

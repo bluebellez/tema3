@@ -1,4 +1,21 @@
-body {
-  background-color: orange; }
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+h1 {
+  font-size: 3em;
+  margin-top: 5px;
+  font-family: "Josefin Slab", serif; }
+
+#logo {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff; }
+
+#header-tekst {
+  display: flex;
+  justify-content: center; }
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden; }
 
 /*# sourceMappingURL=styles.css.map */
