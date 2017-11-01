@@ -1,21 +1,122 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+* {
+  box-sizing: border-box; }
+
 h1 {
-  font-size: 3em;
-  margin-top: 5px;
-  font-family: "Josefin Slab", serif; }
+  font-family: "Josefin Slab", serif;
+  margin-left: 10px; }
 
-#logo {
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff; }
+p {
+  font-size: 1.3em;
+  line-height: 32px;
+  margin-left: 10px;
+  margin-right: 10px; }
 
-#header-tekst {
-  display: flex;
-  justify-content: center; }
+body {
+  margin: 0;
+  background-color: #f9f7f4; }
 
-.menu ul {
-  display: flex;
+/**Inspiration: Header**/
+header {
+  width: 100%;
+  background-image: url("https://i.pinimg.com/736x/b7/fb/fb/b7fbfbc11b53003063948dd6628127c2--white-texture-templates-free.jpg");
+  top: 0; }
+
+.logo {
+  width: 30%;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.firma {
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  margin-top: 10px; }
+
+/**Inspiration: Navigation**/
+nav {
+  padding-bottom: 5px; }
+
+ul {
   list-style-type: none;
-  overflow: hidden; }
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; }
+
+li {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 0.7em; }
+
+/**Inspiration: Footer**/
+footer {
+  background-image: url("https://i.pinimg.com/736x/b7/fb/fb/b7fbfbc11b53003063948dd6628127c2--white-texture-templates-free.jpg");
+  height: 90px; }
+  footer a {
+    text-decoration: none;
+    color: black; }
+  footer a:hover {
+    color: #7a7a7a; }
+  footer p {
+    font-size: 1.3em;
+    line-height: 10px; }
+
+.kontakt {
+  margin: 0;
+  font-size: 0.8em;
+  float: left;
+  padding-left: 5px; }
+
+.social {
+  width: 35px;
+  float: right;
+  margin: 40px 5px 0 0; }
+
+.kontakt-om-img2 {
+  display: none; }
+
+.kontakt-om-img3 {
+  display: none; }
+
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    .kontakt-om-img2 {
+      display: block; }
+
+    .kontakt-om-img3 {
+      display: block; }
+
+    body {
+      display: grid;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      grid-template-areas: "header header header" "Gsec-kontakt-om-img1 Gsec-kontakt-om-img2 Gsec-kontakt-om-img3" "Gsec-kontakt-tekst Gsec-om-tekst Gsec-om-tekst" "footer footer footer"; }
+
+    header {
+      grid-area: header; }
+
+    .kontakt-om-img1 {
+      grid-area: Gsec-kontakt-om-img1; }
+
+    .kontakt-om-img2 {
+      grid-area: Gsec-kontakt-om-img2; }
+
+    .kontakt-om-img3 {
+      grid-area: Gsec-kontakt-om-img3; }
+
+    .kontakt-tekst {
+      margin-left: 10px;
+      grid-area: Gsec-kontakt-tekst; }
+
+    .om-tekst {
+      margin-left: 10px;
+      grid-area: Gsec-om-tekst; }
+
+    footer {
+      grid-area: footer; }
+
+    .logo {
+      width: 10%; } } }
 
 /*# sourceMappingURL=styles.css.map */
