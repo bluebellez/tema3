@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+/**INSPIRATION**/
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0; }
+
+/**Inspiration: Header**/
+header {
+  width: 100%;
+  background-image: url("https://i.pinimg.com/736x/b7/fb/fb/b7fbfbc11b53003063948dd6628127c2--white-texture-templates-free.jpg");
+  position: fixed;
+  top: 0; }
 
 .logo {
   width: 30%;
@@ -12,8 +23,11 @@ body {
 .firma {
   text-align: center;
   font-family: "Josefin Slab";
-  font-size: 3em;
   margin-top: 10px; }
+
+/**Inspiration: Navigation**/
+nav {
+  padding-bottom: 5px; }
 
 ul {
   list-style-type: none;
@@ -24,6 +38,84 @@ ul {
 
 li {
   font-family: "Josefin Slab";
-  font-size: 1.5em; }
+  font-weight: bold;
+  font-size: 0.7em; }
+
+/**Inspiration: Main**/
+.rubrik {
+  font-weight: bold;
+  margin-top: 170px; }
+
+.main {
+  padding: 10px 10px;
+  font-family: "Josefin Slab";
+  font-size: 1em;
+  text-align: justify; }
+
+.foto {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/**Inspiration: Footer**/
+footer {
+  background-image: url("https://i.pinimg.com/736x/b7/fb/fb/b7fbfbc11b53003063948dd6628127c2--white-texture-templates-free.jpg");
+  height: 90px;
+  margin-top: 20px; }
+
+.kontakt {
+  margin: 0;
+  font-size: 0.8em;
+  float: left;
+  padding-left: 5px; }
+
+.social {
+  width: 35px;
+  float: right;
+  margin: 40px 5px 0 0; }
+
+/**Inspiration: Tablet Media Q**/
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    body {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "gsec1 gsec1" "gfoto1 gfoto1" "gsec2 gsec2" "Sec3 Foto2" "Foto3 Sec4" "Sec5 Foto4" "Foto5 Sec6" "Sec7 Foto6" "footer footer"; }
+
+    li {
+      font-size: 1.6em; }
+
+    .Sec1 {
+      grid-area: gsec1;
+      margin-top: 15%; }
+
+    .Sec2 {
+      grid-area: gsec2; }
+
+    .Sec3 {
+      grid-area: Sec3; }
+
+    .Sec4 {
+      grid-area: Sec4; }
+
+    .Sec5 {
+      grid-area: Sec5; }
+
+    .Sec6 {
+      grid-area: Sec6; }
+
+    .Sec7 {
+      grid-area: Sec7; }
+
+    .Foto1 {
+      grid-area: gfoto1; }
+
+    footer {
+      grid-area: footer; } } }
+@supports (grid-area: auto) {
+  @media screen and (min-width: 1300px) {
+    body .Sec1 {
+      margin-top: 20%; } } }
 
 /*# sourceMappingURL=styles.css.map */
