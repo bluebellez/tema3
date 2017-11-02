@@ -42,6 +42,10 @@ li {
   font-weight: bold;
   font-size: 0.7em; }
 
+.current {
+  text-shadow: 1px 1px grey;
+  text-decoration: underline; }
+
 /**Inspiration: Main**/
 .rubrik {
   font-weight: bold;
