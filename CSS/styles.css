@@ -1,3 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
+* {
+  box-sizing: border-box; }
 
+body {
+  background-color: snow;
+  margin: 0;
+  font-family: "Josefin Slab", serif, Serif; }
+
+/**Header**/
+header {
+  width: 100%;
+  background-image: url("https://i.pinimg.com/736x/b7/fb/fb/b7fbfbc11b53003063948dd6628127c2--white-texture-templates-free.jpg");
+  top: 0; }
+
+.logo {
+  width: 30%;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.firma {
+  text-align: center;
+  font-family: "Josefin Slab", serif, Serif;
+  margin-top: 10px; }
+
+/**Inspiration: Navigation**/
+nav {
+  padding-bottom: 5px; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; }
+
+li {
+  font-family: "Josefin Slab", serif, Serif;
+  font-weight: bold;
+  font-size: 0.7em; }
+
+footer {
+  background-image: url("https://i.pinimg.com/736x/b7/fb/fb/b7fbfbc11b53003063948dd6628127c2--white-texture-templates-free.jpg");
+  height: 90px; }
+
+.foot {
+  margin: 0;
+  font-size: 0.8em;
+  float: left;
+  padding-left: 5px; }
+
+.social {
+  width: 35px;
+  float: right;
+  margin: 40px 5px 0 0; }
+
+.text {
+  font-size: 18pt;
+  margin: 10px; }
+
+.slot {
+  margin-bottom: -6px; }
+
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    body {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "head head" "gsec2 gsec1" "gsec3 gsec4" "gsec6 gsec5" "foot foot"; }
+
+    header {
+      grid-area: head; }
+
+    .sec1 {
+      grid-area: gsec1; }
+
+    .sec2 {
+      grid-area: gsec2; }
+
+    .sec3 {
+      grid-area: gsec3; }
+
+    .sec4 {
+      grid-area: gsec4; }
+
+    .sec5 {
+      grid-area: gsec5; }
+
+    .sec6 {
+      grid-area: gsec6; }
+
+    footer {
+      grid-area: foot; } } }
 
 /*# sourceMappingURL=styles.css.map */
