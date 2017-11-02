@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: snow; }
 
 /**Inspiration: Header**/
 header {
@@ -62,6 +63,7 @@ li {
 footer {
   background-image: url("https://i.pinimg.com/736x/b7/fb/fb/b7fbfbc11b53003063948dd6628127c2--white-texture-templates-free.jpg");
   height: 90px;
+  width: 100%;
   margin-top: 20px; }
 
 .kontakt {
@@ -78,13 +80,19 @@ footer {
 /**Inspiration: Tablet Media Q**/
 @supports (grid-area: auto) {
   @media screen and (min-width: 600px) {
-    body {
+    #inspiration {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-areas: "gsec1 gsec1" "gfoto1 gfoto1" "gsec2 gsec2" "Sec3 Foto2" "Foto3 Sec4" "Sec5 Foto4" "Foto5 Sec6" "Sec7 Foto6" "footer footer"; }
 
     li {
       font-size: 1.6em; }
+
+    .main {
+      font-size: 1.3em; }
+
+    .foto {
+      margin-top: 20px; }
 
     .Sec1 {
       grid-area: gsec1;
@@ -114,8 +122,31 @@ footer {
     footer {
       grid-area: footer; } } }
 @supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    #forside {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "gsec1 gsec1" "gsec2 gfoto1" "footer footer"; }
+
+    .sec1 {
+      grid-area: gsec1;
+      margin-top: 15%; }
+
+    .sec2 {
+      grid-area: gsec2; }
+
+    .foto1 {
+      grid-area: gfoto1; }
+
+    footer {
+      grid-area: footer; } } }
+@supports (grid-area: auto) {
   @media screen and (min-width: 1300px) {
-    body .Sec1 {
+    #inspiration .Sec1 {
+      margin-top: 20%; } } }
+@supports (grid-area: auto) {
+  @media screen and (min-width: 1300px) {
+    #forside .sec1 {
       margin-top: 20%; } } }
 
 /*# sourceMappingURL=styles.css.map */
